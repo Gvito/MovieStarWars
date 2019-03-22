@@ -1,4 +1,5 @@
-<!-- table peaple-->
+<h2 class="pb-4">Les personnages</h2>
+<!-- table people-->
 <table class="table table-hover table-dark">
   <thead>
     <tr>
@@ -9,11 +10,11 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td></td>
-      <td></td>
-      <td></td>
+    <tr *ngFor="let peop of people">
+      <th scope="row">{{peop.id}}</th>
+      <td>{{peop.name}}</td>
+      <td>{{peop.gender}}</td>
+      <td>{{peop.films}}</td>
     </tr>
   </tbody>
 </table>
