@@ -8,7 +8,9 @@ import { StarshipsComponent } from './starships/starships.component';
 import { PeopleDetailComponent } from './people-detail/people-detail.component';
 import { PlanetsDetailComponent } from './planets-detail/planets-detail.component';
 import { StarshipsDetailComponent } from './starships-detail/starships-detail.component';
+
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
